@@ -1,0 +1,40 @@
+#multi-text {
+    color: blueviolet;
+}
+body {
+    font-family: "font-family: roc-grotesk, sans-serif;"
+}
+
+.nav {
+    list-style: none;
+    text-align: center; /* Added a semicolon at the end */
+    background-color: brown;
+    color: aliceblue;
+}
+.container {
+    border: 1px solid burlywood;
+    background-color: antiquewhite;
+}
+.nav li {
+    display: inline;
+    margin: 20px;
+}
+
+.nav a {
+    color:aliceblue;
+}
+.orange-text {
+    color: rgb(184, 39, 39);
+}
+.center_text {
+    text-align: center;
+}
+.my-first-div {
+    color: aliceblue;
+}
+#span-1 {
+    color: blue;
+}
+#span-2 {
+    color: red;
+}

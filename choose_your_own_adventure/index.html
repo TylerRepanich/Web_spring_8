@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose your own adventure | tyler repanich</title>
+    <link rel="icon" type="image/x-icon" href="images/image (1).png">
+</head>
+<body>
+
+<script>
+function playGame() {
+        var enterHouse = confirm("you find a strange house in the middle of the woods, do you want to go in");
+        if (enterHouse == true) {
+            alert("you dicide to enter flavor town, and find a hot dog(1), a cake(2) and a milk shake(3)");
+                var hotdog = prompt("you find a hot dog(1), a cake(2) and a milk shake(3)");
+                if (hotdog == "1") {
+                    alert("you feel funny but you contine on");
+                    var fight = confirm("you see a guy do you fight him");
+                    if (fight == true) {
+                        alert("you wake up in the hospital");
+                            var wake = prompt("what do you do use the bathroom(2), jump(1) out the window to saftey or stay ing bed(3) ");
+                            if (wake == 1) {
+                                alert("you did not relize you were 12 floors high");
+                            }
+                            else if (wake == 2) {
+                                alert("you here baging on on the bathroom door");
+                                var knock = confirm("do you awnser");
+                                if (knock == true) {
+                                    alert("a cat with a sword hits you over the head")
+                                } else {
+                                    alert("you live a long and happy life")
+                                }
+
+                            } else {
+                                alert("you live a happy and long life");
+                            }
+
+                    } else {                
+                        alert("you are found 3 day later with scrach marcks on your hands");
+                    }
+                } else if (hotdog == "2") {
+                alert("the cake is hard as a rock and after one bite you run outside and through up");
+                } else if (hotdog == "3") {
+                alert("you clopes to the ground");
+                }else {
+                alert("try agian");
+                }
+                
+        } else {
+            //we do not enter the flavor town
+            alert("you walked away and lived a happy life");
+        }
+
+        var playAgian = confirm("do you want to play agian")
+        if (playAgian == true) {
+            playGame();
+        } else {
+            alert("Thanks for playing, goodbye!")
+        }
+            
+        }
+
+        playGame ();
+
+</script>
+    
+</body>
+</html>
