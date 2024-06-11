@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <style>
+       li a:hover:not(.fun) {
+    background-color: #518fd1d4;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow:  0px 0px 10px  rgb(68, 51, 144) inset;
+    }
+  .fun {
+    background-color: #4462c6;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow:  0px 0px 10px  rgb(120, 116, 138) inset;
+  }
+  body {
+    text-align: center;
+  }
+  button {
+    background-color: rgb(99, 144, 183);
+    border-radius: 10px
+    
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="nav">
+            <li><a href="index.html">home</a></li>
+            <li><a href="intrests.html">interests</a></li>
+            <li><a href="classes.html">classes</a></li>
+            <li class="fun"><a href="fun.html">Fun</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+    </div>
+    <div>
+        <br>
+    <h2>magic 8-ball</h2>
+    <p>ask a fortune</p>
+    <button onclick="magic8ball();">Shake!</button>
+</div>
+<div>
+    <div>
+        <h2><span id="fortune"></span></h2>
+    </div>
+</div>
+<h2>Play flavor quest</h2>
+<button onclick="playGame();">play</button>
+<br>
+<br>
+<img src="images/11300c745c0d3ef05fa869b4a3f33631-1516202436.jpg" alt="flavor" style="border-radius: 10px;">
+<script>
+function playGame() {
+    var enterHouse = confirm("you find a strange house in the middle of the woods, do you want to go in");
+    if (enterHouse == true) {
+        alert("you dicide to enter flavor town, and find a hot dog(1), a cake(2) and a milk shake(3)");
+            var hotdog = prompt("you find a hot dog(1), a cake(2) and a milk shake(3)");
+            if (hotdog == "1") {
+                alert("you feel funny but you contine on");
+                var fight = confirm("you see a guy do you fight him");
+                if (fight == true) {
+                    alert("you wake up in the hospital");
+                        var wake = prompt("what do you do use the bathroom(2), jump(1) out the window to saftey or stay ing bed(3) ");
+                        if (wake == 1) {
+                            alert("you did not relize you were 12 floors high");
+                        }
+                        else if (wake == 2) {
+                            alert("you here baging on on the bathroom door");
+                            var knock = confirm("do you awnser");
+                            if (knock == true) {
+                                alert("a cat with a sword hits you over the head")
+                            } else {
+                                alert("you live a long and happy life")
+                            }
+
+                        } else {
+                            alert("you live a happy and long life");
+                        }
+
+                } else {                
+                    alert("you are found 3 day later with scrach marcks on your hands");
+                }
+            } else if (hotdog == "2") {
+            alert("the cake is hard as a rock and after one bite you run outside and through up");
+            } else if (hotdog == "3") {
+            alert("you clopes to the ground");
+            }else {
+            alert("try agian");
+            }
+            
+    } else {
+        //we do not enter the flavor town
+        alert("you walked away and lived a happy life");
+    }
+
+    var playAgian = confirm("do you want to play agian")
+    if (playAgian == true) {
+        playGame();
+    } else {
+        alert("Thanks for playing, goodbye!")
+    }
+        
+    }
+
+    
+
+</script>
+</body>
+</html>
